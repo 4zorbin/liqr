@@ -1,0 +1,33 @@
+<html>
+    <head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <video class="video" id="preview" width="100%"></video>
+                </div>
+                <div class="col-md-6">
+                    <label>SCAN QR CODE</label>
+                    <input type="text" name="text" id="text" readonly="" placeholder="scan qrcode" class="form-control">
+                    <label>Status</label>
+                    <input type="text" name="text" id="status" readonly="" placeholder="Exist, Not found, error" class="form-control">
+                </div>
+
+            </div>
+        </div>
+        <div class="btns">
+        <button onclick="saveEl()">Check</button>
+        <button onclick="addEl()">Add</button>
+        <button onclick="dellEl()">Dell</button>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
