@@ -1,5 +1,5 @@
 
-let codeEl = document.getElementById('text')
+let codeEl = document.getElementById('text');
 let scanner = new Instascan.Scanner({ video: document.getElementById('preview')});
            Instascan.Camera.getCameras().then(function(cameras){
                if(cameras.length > 0 ){
@@ -20,7 +20,7 @@ let scanner = new Instascan.Scanner({ video: document.getElementById('preview')}
 
 
         function saveEl() {
-            let testusEl = document.getElementById("testus")
+            let testusEl = document.getElementById("testus");
 
             // console.log(codeEl);
                 // console.log('checkClick');
